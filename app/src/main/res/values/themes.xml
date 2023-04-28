@@ -2,18 +2,37 @@
     <!-- Base application theme. -->
     <style name="Theme.AlcoolOuGasolina" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#CB584C</item>
+        <item name="colorPrimary">#f6f6f6</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorPrimaryDark">#1F1F1F</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">#B85045</item>
+        <item name="colorSecondary">#000000</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">@color/bracogelo</item>
 
         <!-- Customize your theme here. -->
         <item name="android:textColorPrimary">@color/black</item>
         <item name="android:textColorHint">@color/black</item>
         <item name="android:backgroundTint">@color/white</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorButtonNormal">#FFFFFF</item>
+
+
+    </style>
+    <style name="background">
+        <item name="android:background">@color/cinza</item>
+        <item name="android:backgroundTint">@color/cinza</item>
+    </style>
+
+    <style name="textocor">
+        <item name="android:textColor">@color/dark</item>
+    </style>
+    <style name="listbackground">
+        <item name="android:backgroundTint">@color/bracogelo</item>
+
     </style>
 </resources>

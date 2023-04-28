@@ -6,7 +6,8 @@
     <corners
         android:radius="25dp" />
     <stroke android:width="0.9dp"
-        android:color="@color/black" />
+        android:color="@color/black"
+        />
     <!-- stroke for defining a border for view -->
 
     <size

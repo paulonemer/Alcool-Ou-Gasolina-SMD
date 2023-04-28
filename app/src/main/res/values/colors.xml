@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="cinza">#FFE9E9E9</color>
+    <color name="cinzaes">#A9A9B3</color>
+    <color name="bracogelo">#F6F6F6F6</color>
+    <color name="dark">#FF010101</color>
+    <color name="darkfra">#FF171717</color>
+    <color name="bluegalaxy">#FF0381FE</color>
 </resources>

@@ -11,10 +11,10 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         style="@style/listbackground"
-        android:layout_width="341dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="224dp"
         android:background="@drawable/rounded_layout"
         android:orientation="vertical"
@@ -36,6 +36,7 @@
             android:ems="10"
             android:hint="alcool"
             android:inputType="numberDecimal"
+            android:minHeight="48dp"
             android:textColorHighlight="@color/bluegalaxy"
             android:textCursorDrawable="@drawable/cursospiscante" />
 
@@ -49,6 +50,7 @@
             android:ems="10"
             android:hint="gasolina"
             android:inputType="numberDecimal"
+            android:minHeight="48dp"
             android:textCursorDrawable="@drawable/cursospiscante" />
 
 
@@ -96,11 +98,12 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btCalcular"
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginVertical="20dp"
         android:background="@drawable/redondo"
         android:elevation="0dp"
+        android:minHeight="48dp"
         android:paddingLeft="64dp"
         android:paddingRight="64dp"
         android:stateListAnimator="@null"
@@ -122,13 +125,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:layout_marginHorizontal="30dp"
+        android:minHeight="48dp"
         android:paddingBottom="16dp"
         android:text="ajustar para 75%"
         android:thumbTint="@color/switchpers"
+
+
         android:trackTint="@color/switchpers"
-
-
-
         app:layout_constraintBottom_toTopOf="@+id/btCalcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

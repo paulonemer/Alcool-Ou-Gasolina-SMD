@@ -1,5 +1,6 @@
 package com.example.alcoolougasolina
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -14,6 +15,21 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val sharedPreferences = getSharedPreferences("DataShare", Context.MODE_PRIVATE)
+
+        val mySwitch = findViewById<Switch>(R.id.swPercentual)
+        val valorSwitch = sharedPreferences.getBoolean("switch", false)
+        mySwitch.isChecked = valorSwitch
+
+
+        mySwitch.setOnClickListener(View.OnClickListener {
+
+            val editor = sharedPreferences.edit()
+            editor.putBoolean("switch", mySwitch.isChecked)
+            editor.apply()
+        })
+
         Log.d("PDM23","No onCreate, $percentual")
 
 

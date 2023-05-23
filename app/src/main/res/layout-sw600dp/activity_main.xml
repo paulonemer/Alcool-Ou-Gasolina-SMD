@@ -13,45 +13,47 @@
         style="@style/listbackground"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="224dp"
         android:background="@drawable/rounded_layout"
         android:orientation="vertical"
         android:paddingTop="16dp"
         android:paddingBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/btCalcular"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:layout_constraintVertical_bias="0.0">
 
 
         <EditText
             android:id="@+id/edAlcool"
             style="@style/textocor"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:backgroundTint="@color/bluegalaxy"
             android:ems="10"
-            android:hint="@string/box_alcool"
+            android:hint="alcool"
             android:inputType="numberDecimal"
-            android:minHeight="48dp"
+            android:minHeight="70sp"
             android:textColorHighlight="@color/bluegalaxy"
-            android:textCursorDrawable="@drawable/cursospiscante" />
+            android:textCursorDrawable="@drawable/cursospiscante"
+            android:textSize="25sp" />
 
         <EditText
             android:id="@+id/edGasolina"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:backgroundTint="@color/bluegalaxy"
             android:ems="10"
-            android:hint="@string/box_gasolina"
+            android:hint="gasolina"
             android:inputType="numberDecimal"
-            android:minHeight="48dp"
-            android:textCursorDrawable="@drawable/cursospiscante" />
+            android:minHeight="70dp"
+            android:textCursorDrawable="@drawable/cursospiscante"
+            android:textSize="25sp" />
 
 
     </LinearLayout>
@@ -62,37 +64,12 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.227"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.636">
 
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="120sp"
-            android:layout_marginTop="52dp"
-            android:scaleType="fitCenter"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.493"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/bomba" />
-
-        <TextView
-            android:id="@+id/titulo"
-            style="@style/textocor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="26dp"
-            android:layout_marginBottom="26dp"
-            android:fontFamily="sans-serif-light"
-            android:text="@string/text_titulo"
-            android:textAlignment="center"
-            android:textSize="27sp"
-            android:textStyle="bold" />
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
@@ -107,34 +84,50 @@
         android:paddingLeft="64dp"
         android:paddingRight="64dp"
         android:stateListAnimator="@null"
-        android:text="@string/button_calcular"
+        android:text="Calcular"
         android:textAllCaps="false"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:backgroundTint="@drawable/botaopres"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.835" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Switch
         android:id="@+id/swPercentual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:layout_marginHorizontal="30dp"
         android:minHeight="48dp"
         android:paddingBottom="16dp"
-        android:text="@string/switch_ajustartaxa"
+
+
+        android:text="ajustar para 75%"
+        android:textSize="25sp"
         android:thumbTint="@color/switchpers"
-
-
         android:trackTint="@color/switchpers"
         app:layout_constraintBottom_toTopOf="@+id/btCalcular"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/titulo"
+        style="@style/textocor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="528dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Gasolina ou Álcool?"
+        android:textAlignment="center"
+        android:textSize="66sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Com qual combustível?</string>
     <string name="box_alcool">Álcool</string>
@@ -5,5 +6,6 @@
     <string name="text_titulo">Gasolina ou Álcool</string>
     <string name="button_calcular">Calcular</string>
     <string name="switch_ajustartaxa">Ajustar para 75%</string>
+
 
 </resources>

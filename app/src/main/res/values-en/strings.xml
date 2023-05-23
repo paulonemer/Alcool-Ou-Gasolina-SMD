@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">what fuel?</string>
+    <string name="box_alcool">Alcohol</string>
+    <string name="box_gasolina">Gasoline</string>
+    <string name="text_titulo">Gasoline or Alcohol</string>
+    <string name="button_calcular">Calculate</string>
+    <string name="switch_ajustartaxa">Adjust to 75%</string>
+
+</resources>
